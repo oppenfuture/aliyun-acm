@@ -1,0 +1,17 @@
+[package]
+name = "aliyun-acm"
+version = "0.1.0"
+authors = ["chubei <chubei@oppentech.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.10" }
+tokio = { version = "0.2", features = ["full"] }
+bytes = "0.5"
+log = "0.4"
+hmac-sha1 = "0.1"
+md-5 = "0.9"
+hex = "0.4"
+base64 = "0.13"
