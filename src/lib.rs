@@ -215,7 +215,7 @@ async fn get_acm_server(address_server: &str) -> Result<Ipv4Addr> {
     .error_for_status()?
     .text()
     .await?;
-  let address = address.trim();
+  let address = address.split("\n").next().unwrap_or("");
   address.parse().map_err(|_| {
     let message = format!("{} is not a valid ipv4 address", address);
     Error::Custom(message)
