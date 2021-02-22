@@ -6,7 +6,7 @@ The library uses [reqwest](https://github.com/seanmonstar/reqwest) and hence is 
 
 ## Quick start
 
-```code
+```rust
 // Create the group you're interested in.
 let group = AcmGroup{
   access_key: String::from("access_key"),
