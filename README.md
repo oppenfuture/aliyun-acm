@@ -12,7 +12,7 @@ let group = AcmGroup{
   access_key: String::from("access_key"),
   secret_key: String::from("secret_key"),
   namespace: String::from("namespace"),
-  group: String::from("group),
+  group: String::from("group"),
 };
 
 // Create an Acm instance listening to zero or more acm entries.
